@@ -1,0 +1,47 @@
+package com.aggregator.sort;
+ 
+public class Products {
+ 
+    public String title;
+    public String price;
+    public String description;
+    public String review;
+    public String urls;
+ 
+    public Sring gettitle() {
+        return title;
+    }
+ 
+    public String getprice() {
+        return name;
+    }
+ 
+    public String getDesc() {
+        return description;
+    }
+ 
+    public String getreview() {
+        return review;
+    }
+
+	public Sring geturls() {
+        return urls;
+    }
+ 
+ 
+    public Employee(String title, String price, String description, String review, String urls) {
+        this.title = title;
+        this.price = price;
+        this.description = description;
+        this.review = review;
+	this.urls = urls;
+    }
+ 
+    @Override
+    //this is overriden to print the user friendly information about the Product
+    public String toString() {
+        return "[title=" + this.title + ", price=" + this.price + ", description=" + this.description + ", review=" +
+                this.review + ", urls=" +
+                this.urls + "]";
+    }
+}
