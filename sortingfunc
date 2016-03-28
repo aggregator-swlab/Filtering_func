@@ -1,0 +1,9 @@
+public static Comparator<Product> PriceComparator = new Comparator<Product>() {
+ 
+        @Override
+        public int compare(Product p1, Product p2) {
+            return (int) (extractprice(p1) - extractprice(p2));
+        }
+    };
+ 
+  
